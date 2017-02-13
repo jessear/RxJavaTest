@@ -23,9 +23,15 @@ public class MainActivity extends Activity {
         });
 
         Subscriber<String> subscriber=new Subscriber<String>() {
+
+            @Override
+            public void onStart() {
+                Log.i("---------------->", "onStart()");
+            }
+
             @Override
             public void onCompleted() {
-
+                Log.i("---------------->", "onCompleted()");
             }
 
             @Override
@@ -35,7 +41,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onNext(String s) {
-                Log.i("xxxxxxxxxxx",s);
+                Log.i("---------------->", "onNext(),"+s);
             }
         };
 
