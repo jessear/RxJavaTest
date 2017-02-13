@@ -3,12 +3,9 @@ package com.example.public1.rxjava;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-
 import org.reactivestreams.Publisher;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import io.reactivex.Flowable;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -18,7 +15,6 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
-import rx.functions.Action1;
 
 public class MainActivity extends Activity {
 
